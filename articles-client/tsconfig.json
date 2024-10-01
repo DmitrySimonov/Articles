@@ -1,0 +1,16 @@
+{
+  "extends": "@/config-ts/tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "outDir": "dist/ts",
+  },
+  "include": [
+    "src",
+    "api",
+     "components/**/*",
+     "articles/**/*",
+     "features/**/*"
+  ]
+}

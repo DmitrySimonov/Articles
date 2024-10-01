@@ -1,0 +1,38 @@
+{
+  "name": "@/articles-server",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/apps/articles/articles-server/src/main.js",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "migrate:up": "ts-node --project tsconfig.json ../../../node_modules/.bin/mongo-migrate up"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.609.0",
+    "@aws-sdk/s3-request-presigner": "^3.609.0",
+    "@/server-base": "*",
+    "@/shared": "*",
+    "mongo-migrate-ts": "^1.6.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "@nestjs/common": "*",
+    "@nestjs/config": "*",
+    "@nestjs/core": "*",
+    "@nestjs/platform-express": "*",
+    "@nestjs/swagger": "*",
+    "class-transformer": "*",
+    "class-validator": "*",
+    "reflect-metadata": "*",
+    "rxjs": "*"
+  }
+}

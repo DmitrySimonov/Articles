@@ -1,0 +1,6 @@
+{
+  "useEnv": true,
+  "migrationsDir": "migrations",
+  "migrationsCollection": "migrations_changelog",
+  "migrationFileExtension": ".ts"
+}
